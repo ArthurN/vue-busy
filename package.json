@@ -3,6 +3,7 @@
   "description": "Application busy/loading state management as a Vuex module",
   "version": "1.0.0",
   "author": "Arthur Nisnevich <arthur.nisnevich@gmail.com>",
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build --target lib --name vue-busy-module src/index.ts",

@@ -1,5 +1,5 @@
 {
-  "name": "vue-busy",
+  "name": "vue-busy-module",
   "description": "Application busy/loading state management as a Vuex module",
   "version": "1.0.0",
   "author": "Arthur Nisnevich <arthur.nisnevich@gmail.com>",

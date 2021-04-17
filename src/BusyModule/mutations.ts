@@ -1,13 +1,5 @@
-import { MutationTree } from "vuex";
-import { BusyActivity, BusyModuleState } from ".";
-
-export type StartOptions = { name: string } & Pick<BusyActivity, "data">;
-export type FinishOptions = { name: string } & Pick<BusyActivity, "outcome" | "data">;
-
-interface BusyMutations<S> extends MutationTree<S> {
-  START(state: S, options: StartOptions): void;
-  FINISH(state: S, options: FinishOptions): void;
-}
+import { BusyMutations } from "types";
+import { BusyModuleState } from ".";
 
 const mutations: BusyMutations<BusyModuleState> = {
   START(state, { name, data }) {

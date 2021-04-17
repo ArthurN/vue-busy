@@ -1,16 +1,8 @@
+import { BusyActivity } from "types";
 import { Module } from "vuex";
 import actions from "./actions";
 import getters from "./getters";
 import mutations from "./mutations";
-
-export interface BusyActivity {
-  started: Date;
-  finished?: Date;
-  outcome?: string;
-  data?: {
-    [key: string]: unknown;
-  };
-}
 
 export class BusyModuleState {
   public activities: {

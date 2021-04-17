@@ -98,9 +98,9 @@ describe("BusyGetters", () => {
         activities: {
           someApiRequest: {
             started: new Date(0),
-            finished: new Date(50)
-          }
-        }
+            finished: new Date(50),
+          },
+        },
       });
 
       expect(store.getters["getDuration"]("someApiRequest")).toEqual(50);
@@ -140,7 +140,7 @@ describe("BusyGetters", () => {
       }
 
       expect(store.getters["filterByOutcome"](null)).toEqual(["activity2"]);
-    })
+    });
   });
 
   describe("getBusy", () => {

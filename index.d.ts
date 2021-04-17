@@ -1,4 +1,4 @@
-import { ActionTree, GetterTree, MutationTree } from "vuex";
+import { ActionContext, ActionTree, GetterTree, MutationTree } from "vuex";
 
 export declare interface BusyActivity {
   started: Date;
@@ -12,17 +12,17 @@ export declare interface BusyActivity {
 export declare type StartOptions = { name: string } & Pick<BusyActivity, "data">;
 export declare type FinishOptions = { name: string } & Pick<BusyActivity, "outcome" | "data">;
 
-declare interface BusyMutations<S> extends MutationTree<S> {
+export declare interface BusyMutations<S> extends MutationTree<S> {
   START(state: S, options: StartOptions): void;
   FINISH(state: S, options: FinishOptions): void;
 }
 
-declare interface BusyActions<S> extends ActionTree<S, unknown> {
+export declare interface BusyActions<S> extends ActionTree<S, unknown> {
   start(ctx: ActionContext<S, unknown>, options: StartOptions): void;
   finish(ctx: ActionContext<S, unknown>, options: FinishOptions): void;
 }
 
-declare interface BusyGetters<S> extends GetterTree<S, unknown> {
+export declare interface BusyGetters<S> extends GetterTree<S, unknown> {
   isBusy(state: S): (name: string) => boolean;
   getData(state: S): (name: string) => unknown;
   getOutcome(state: S): (name: string) => string | undefined;
@@ -32,4 +32,4 @@ declare interface BusyGetters<S> extends GetterTree<S, unknown> {
   getFinished(state: S): (nameFilter?: string) => string[];
 }
 
-declare const VueBusyModule: Plugin<unknown>;
+export default function <S>(state: S): void;

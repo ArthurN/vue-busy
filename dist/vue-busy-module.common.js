@@ -2850,9 +2850,6 @@ module.exports = function (key) {
 // ESM COMPAT FLAG
 __webpack_require__.r(__webpack_exports__);
 
-// EXPORTS
-__webpack_require__.d(__webpack_exports__, "VueBusyModule", function() { return /* reexport */ src_VueBusyModule; });
-
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/setPublicPath.js
 // This file is imported into lib/wc client bundles.
 
@@ -3125,9 +3122,11 @@ var BusyModule_BusyModule = function BusyModule() {
 };
 // CONCATENATED MODULE: ./src/index.ts
 
+
 var src_VueBusyModule = function VueBusyModule(store) {
   store.registerModule("busy", new BusyModule_BusyModule());
 };
+
 /* harmony default export */ var src_0 = (src_VueBusyModule);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 

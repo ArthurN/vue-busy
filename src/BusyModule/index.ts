@@ -1,4 +1,4 @@
-import { BusyActivity } from "types";
+import { BusyActivity } from "index";
 import { Module } from "vuex";
 import actions from "./actions";
 import getters from "./getters";

@@ -1,4 +1,4 @@
-import { BusyActivity, BusyGetters } from "types";
+import { BusyActivity, BusyGetters } from "index";
 import { BusyModuleState } from ".";
 
 const isFinishedTest = (busy: BusyActivity): boolean => {

@@ -1,4 +1,4 @@
-import { BusyActions } from "types";
+import { BusyActions } from "index";
 import { BusyModuleState } from ".";
 
 const actions: BusyActions<BusyModuleState> = {

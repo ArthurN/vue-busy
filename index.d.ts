@@ -31,3 +31,5 @@ declare interface BusyGetters<S> extends GetterTree<S, unknown> {
   getBusy(state: S): (nameFilter?: string) => string[];
   getFinished(state: S): (nameFilter?: string) => string[];
 }
+
+declare const VueBusyModule: Plugin<unknown>;

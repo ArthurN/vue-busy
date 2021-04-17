@@ -19,6 +19,9 @@ module.exports = {
     port: 8000,
   },
   configureWebpack: {
+    output: {
+      libraryExport: 'default'
+    },
     resolve: {
       alias: {
         "@": path.resolve(__dirname, "./src"),

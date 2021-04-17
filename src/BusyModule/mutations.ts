@@ -1,4 +1,4 @@
-import { BusyMutations } from "types";
+import { BusyMutations } from "index";
 import { BusyModuleState } from ".";
 
 const mutations: BusyMutations<BusyModuleState> = {

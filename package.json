@@ -1,7 +1,7 @@
 {
   "name": "vue-busy-module",
   "description": "Application busy/loading state management as a Vuex module",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "author": "Arthur Nisnevich <arthur.nisnevich@gmail.com>",
   "license": "MIT",
   "scripts": {

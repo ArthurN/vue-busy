@@ -1,7 +1,7 @@
 {
   "name": "vue-busy-module",
   "description": "Application busy/loading state management as a Vuex module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Arthur Nisnevich <arthur.nisnevich@gmail.com>",
   "license": "MIT",
   "scripts": {
@@ -16,7 +16,7 @@
   "files": ["dist/"],
   "module": "dist/vue-busy-module.common.js",
   "browser": "dist/vue-busy-module.umd.min.js",
-  "typings": "dist/src/index.d.ts",
+  "typings": "types/index.d.ts",
   "peerDependencies": {
     "vue": "^3.0.0",
     "vuex": "^4.0.0-0"
